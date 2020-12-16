@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Welcome | MAS tike</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+   <link href="./css/parallax.css" rel="stylesheet">
+
+</head>
+<body>
+
+   <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="about.html">About</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact</a>
+   </div>
+    
+   
+   <span id="otvori-nav" onclick="openNav()">MENU</span>
+
+
+   <div id="intro">
+      <div class="story">
+         <div class="float-left">
+            <h2>The Way of the Future</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio.</p> 
+         </div>
+      </div>
+    
+   </div>
+  
+   <div id="second">
+      <div class="story">
+         <div class="bg"></div>
+         <div class="float-right">
+            <h2>Fun with MAS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio.</p> 
+            <p>Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+         </div>
+      </div>
+     
+   </div>
+ 
+   <div id="third">
+      <div class="story">
+         <div class="float-left">
+            <h2>Why is Mas so Awesome?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio.</p> 
+         </div>
+      </div>
+     
+   </div>
+  
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://www.solodev.com/assets/parallax/jquery.localscroll-1.2.7-min.js"></script>
+   <script src="https://www.solodev.com/assets/parallax/jquery.parallax-1.1.3.js"></script>
+   <script src="https://www.solodev.com/assets/parallax/jquery.scrollTo-1.4.2-min.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function(){
+            $('#nav').localScroll(800);
+            $('#intro').parallax("50%", 0.1);
+            $('#second').parallax("50%", 0.1);
+            $('.bg').parallax("50%", 0.4);
+            $('#third').parallax("50%", 0.3);
+      });
+   </script>
+
+   <script src="./js/main.js"></script>
+   
+</body>
+</html>
